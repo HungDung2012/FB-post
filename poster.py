@@ -1,18 +1,18 @@
 import time
 import random
+import re
 import os
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 from playwright_stealth import stealth_sync
 
-EDGE_USER_DATA = os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\User Data")
+BOT_PROFILE_PATH = os.path.join(os.path.dirname(__file__), "bot_profile")
 
 def post_to_all(content: str, urls: list[str], log):
     with sync_playwright() as p:
         browser = p.chromium.launch_persistent_context(
-            user_data_dir=EDGE_USER_DATA,
+            user_data_dir=BOT_PROFILE_PATH,
             channel="msedge",
             headless=False,
-            args=["--profile-directory=Default"],
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         )
 
@@ -56,31 +56,52 @@ def post_to_all(content: str, urls: list[str], log):
 def _post_to_url(page, url: str, content: str, log):
     page.goto(url, timeout=45000)
     page.wait_for_load_state("networkidle")
+    time.sleep(random.uniform(10, 15))
+
+    # 1. Dismiss overlay/popup: click vùng trắng + đóng dialog nếu có
+    page.mouse.click(0, 0)
+    time.sleep(1)
+    page.keyboard.press("Escape")
+    time.sleep(1)
+
+    close_btns = page.locator('div[aria-label="Đóng"]').all()
+    for btn in close_btns:
+        if btn.is_visible():
+            btn.click()
+            time.sleep(1)
+
+    # 2. Click ô soạn thảo
+    page.goto(url, timeout=45000)
+    page.wait_for_load_state("networkidle")
     time.sleep(random.uniform(5, 8))
 
-    # Bước 1: Click ô soạn thảo bằng text hiển thị (ổn định nhất)
-    composer = page.get_by_text("Bạn viết gì đi...")
-    if not composer.is_visible():
-        composer = page.locator('div[role="button"]:has-text("Bạn viết gì đi...")').first
-    composer.click()
+    # 1. Tìm container cha có role="button" và chứa text mục tiêu
+    # Cách này đảm bảo ta chọn đúng cái button tổng bao quanh chữ "Bạn viết gì đi..."
+    composer_locator = page.locator('div[role="button"]:has(span:text("Bạn viết gì đi..."))').first
+    
+    # 2. Sử dụng tọa độ của phần tử này để click thay vì dùng .click() thông thường
+    # Điều này tránh được các lỗi do lớp phủ (overlay) hoặc sự kiện chặn click của Facebook
+    if composer_locator.is_visible():
+        box = composer_locator.bounding_box()
+        # Click vào tâm của button
+        page.mouse.click(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+        log("Đã click vào ô nhập liệu dựa trên phân cấp DOM.")
+    else:
+        # Nếu vẫn không thấy, thử dùng CSS selector cực cụ thể cho cấu trúc bạn mô tả
+        page.locator('div[role="button"] > div > span:text("Bạn viết gì đi...")').first.click(force=True)
 
-    # Bước 2: Đợi dialog xuất hiện
-    page.wait_for_selector('div[role="dialog"]', timeout=15000)
+    # 3. Đợi dialog và nhập nội dung
+    page.wait_for_selector('div[role="dialog"]', timeout=20000)
     dialog = page.locator('div[role="dialog"]')
 
-    # Bước 3: Nhập nội dung vào contenteditable trong dialog
-    text_input = dialog.locator('div[contenteditable="true"]').first
+    text_input = dialog.locator('div[role="textbox"]').first
     text_input.click()
-    page.keyboard.type(content, delay=100)
+    page.keyboard.type(content, delay=150)
     time.sleep(2)
 
-    # Bước 4: Click nút Đăng
-    post_btn = dialog.get_by_role("button", name="Đăng")
-    if post_btn.is_visible():
-        post_btn.click()
-        log("Đã nhấn Đăng.")
-    else:
-        dialog.locator('button[type="submit"]').click()
-        log("Đã nhấn Đăng (submit).")
+    # 4. Click nút Đăng
+    post_btn = dialog.get_by_role("button", name=re.compile(r"Đăng", re.IGNORECASE)).first
+    post_btn.evaluate("node => node.click()")
+    log("Đã kích hoạt nút Đăng.")
 
     time.sleep(random.uniform(5, 8))
