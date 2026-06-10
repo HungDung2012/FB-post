@@ -1,6 +1,0 @@
-2026/06/06-20:45:55.331 5650 Reusing MANIFEST D:\ThucHanh\tool\toolface\bot_profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/06/06-20:45:55.332 5650 Recovering log #19
-2026/06/06-20:45:55.333 5650 Reusing old log D:\ThucHanh\tool\toolface\bot_profile\Default\EdgeCoupons/coupons_data.db/000019.log 
-2026/06/06-20:45:55.408 296c Level-0 table #24: started
-2026/06/06-20:45:55.411 296c Level-0 table #24: 682836 bytes OK
-2026/06/06-20:45:55.413 296c Delete type=0 #19
