@@ -49,17 +49,18 @@ pyautogui.PAUSE = 0.2
 POSITIONS = {}
 
 
-def post_to_all(content: str, urls: list[str], log, image_path: str | None = None):
+def post_to_all(content: str, urls: list[str], log, image_paths: list[str] | None = None):
     _load_positions()
+    image_paths = image_paths or []
     log("Dang dung che do auto-click tren Edge that.")
     log("Hay dung chuot len goc tren-ben-trai man hinh de dung khan cap.")
-    if image_path:
-        log(f"Se dang kem anh: {image_path}")
+    if image_paths:
+        log(f"Se dang kem {len(image_paths)} anh.")
 
     for i, url in enumerate(urls, 1):
         log(f"[{i}/{len(urls)}] Mo Edge: {url}")
         try:
-            _post_to_url(url, content, log, image_path)
+            _post_to_url(url, content, log, image_paths)
             log("  Dang bai xong theo luong auto-click.")
         except pyautogui.FailSafeException:
             log("  Da dung khan cap vi chuot duoc dua vao goc tren-ben-trai.")
@@ -75,7 +76,7 @@ def post_to_all(content: str, urls: list[str], log, image_path: str | None = Non
     log("Hoan tat!")
 
 
-def _post_to_url(url: str, content: str, log, image_path: str | None):
+def _post_to_url(url: str, content: str, log, image_paths: list[str]):
     _open_edge(url)
     log(f"Da mo Edge kich thuoc {BROWSER_WIDTH}x{BROWSER_HEIGHT} tai ({BROWSER_X}, {BROWSER_Y}).")
     log(f"Cho trang tai {PAGE_LOAD_SECONDS:.1f}s...")
@@ -90,14 +91,14 @@ def _post_to_url(url: str, content: str, log, image_path: str | None):
     _human_click(*composer_click)
     time.sleep(COMPOSER_OPEN_SECONDS)
 
-    if image_path:
-        _attach_image(image_path, log)
+    if image_paths:
+        _attach_images(image_paths, log)
 
     log("Nhap noi dung truc tiep vao form dang bai.")
     _type_text_slow(content)
     time.sleep(BEFORE_POST_SECONDS)
 
-    _click_post_button(log, bool(image_path), content)
+    _click_post_button(log, len(image_paths), content)
     time.sleep(3)
 
 
@@ -149,17 +150,18 @@ def _human_click(x: int, y: int):
     pyautogui.click()
 
 
-def _attach_image(image_path: str, log):
-    if not os.path.exists(image_path):
-        raise FileNotFoundError(f"Khong tim thay file anh: {image_path}")
+def _attach_images(image_paths: list[str], log):
+    missing_paths = [path for path in image_paths if not os.path.exists(path)]
+    if missing_paths:
+        raise FileNotFoundError(f"Khong tim thay file anh: {missing_paths[0]}")
 
     photo_button = _position("photo_button", PHOTO_BUTTON_CLICK)
     log(f"Click nut them anh tai {photo_button}.")
     _human_click(*photo_button)
     time.sleep(FILE_DIALOG_SECONDS)
 
-    log("Dang chon file anh trong hop thoai Windows.")
-    pyperclip.copy(os.path.abspath(image_path))
+    log(f"Dang chon {len(image_paths)} file anh trong hop thoai Windows.")
+    pyperclip.copy(_windows_file_dialog_paths(image_paths))
     pyautogui.hotkey("ctrl", "v")
     pyautogui.press("enter")
 
@@ -167,8 +169,8 @@ def _attach_image(image_path: str, log):
     time.sleep(IMAGE_UPLOAD_SECONDS)
 
 
-def _click_post_button(log, has_image: bool, content: str):
-    image_count = 1 if has_image else 0
+def _click_post_button(log, image_count: int, content: str):
+    image_count = min(image_count, 2)
     visual_lines = _estimate_visual_lines(content)
     post_button = _post_button_position(image_count, visual_lines)
     key = _post_button_key(image_count, visual_lines)
@@ -225,3 +227,7 @@ def _type_text_slow(text: str):
         pyperclip.copy(char)
         pyautogui.hotkey("ctrl", "v")
         time.sleep(random.uniform(TYPE_DELAY_MIN, TYPE_DELAY_MAX))
+
+
+def _windows_file_dialog_paths(image_paths: list[str]) -> str:
+    return " ".join(f'"{os.path.abspath(path)}"' for path in image_paths)

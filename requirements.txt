@@ -2,3 +2,4 @@ pyautogui==0.9.54
 pyperclip==1.8.2
 
 # https://www.facebook.com/groups/1530122001925074
+# https://www.facebook.com/groups/2632394563845794

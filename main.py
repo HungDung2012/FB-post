@@ -5,7 +5,11 @@ from tkinter import filedialog, messagebox, scrolledtext
 from poster import post_to_all
 
 
-selected_image_path = ""
+selected_image_paths = []
+IMAGE_FILETYPES = [
+    ("Image files", ("*.png", "*.jpg", "*.jpeg", "*.webp", "*.gif")),
+    ("All files", "*.*"),
+]
 
 
 def start_posting():
@@ -24,29 +28,44 @@ def start_posting():
     log("Bat dau dang bai...")
 
     def run():
-        post_to_all(content, urls, log, selected_image_path or None)
+        post_to_all(content, urls, log, selected_image_paths)
         btn_post.config(state=tk.NORMAL)
 
     threading.Thread(target=run, daemon=True).start()
 
 
 def choose_image():
-    global selected_image_path
-    selected_image_path = filedialog.askopenfilename(
-        title="Chon anh dang kem",
-        filetypes=[
-            ("Image files", "*.png *.jpg *.jpeg *.webp *.gif"),
-            ("All files", "*.*"),
-        ],
-    )
-    if selected_image_path:
-        lbl_image.config(text=selected_image_path)
+    global selected_image_paths
+    try:
+        paths = list(filedialog.askopenfilenames(
+            parent=root,
+            title="Chon mot hoac nhieu anh dang kem",
+            filetypes=IMAGE_FILETYPES,
+        ))
+    except Exception as e:
+        messagebox.showerror("Loi chon anh", str(e))
+        return
+
+    if not paths:
+        return
+
+    for path in paths:
+        if path not in selected_image_paths:
+            selected_image_paths.append(path)
+    refresh_image_list()
 
 
 def clear_image():
-    global selected_image_path
-    selected_image_path = ""
-    lbl_image.config(text="Khong chon anh")
+    global selected_image_paths
+    selected_image_paths = []
+    refresh_image_list()
+
+
+def refresh_image_list():
+    lst_images.delete(0, tk.END)
+    for path in selected_image_paths:
+        lst_images.insert(tk.END, path)
+    lbl_image.config(text=f"Da chon {len(selected_image_paths)} anh" if selected_image_paths else "Khong chon anh")
 
 
 def log(msg):
@@ -71,10 +90,12 @@ txt_urls.pack(fill=tk.X, padx=10)
 
 image_frame = tk.Frame(root)
 image_frame.pack(fill=tk.X, padx=10, pady=(10, 0))
-tk.Button(image_frame, text="Chon anh", command=choose_image).pack(side=tk.LEFT)
+tk.Button(image_frame, text="Them anh", command=choose_image).pack(side=tk.LEFT)
 tk.Button(image_frame, text="Xoa anh", command=clear_image).pack(side=tk.LEFT, padx=(6, 0))
 lbl_image = tk.Label(image_frame, text="Khong chon anh", anchor="w")
 lbl_image.pack(side=tk.LEFT, padx=(8, 0), fill=tk.X, expand=True)
+lst_images = tk.Listbox(root, height=3)
+lst_images.pack(fill=tk.X, padx=10, pady=(4, 0))
 
 btn_post = tk.Button(root, text="Dang bai", bg="#1877f2", fg="white",
                      font=("Arial", 11, "bold"), command=start_posting)
