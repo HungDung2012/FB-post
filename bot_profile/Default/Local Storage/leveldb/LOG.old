@@ -1,3 +1,6 @@
-2026/06/02-14:16:44.408 53ac Reusing MANIFEST D:\ThucHanh\tool\toolface\bot_profile\Default\Local Storage\leveldb/MANIFEST-000001
-2026/06/02-14:16:44.412 53ac Recovering log #3
-2026/06/02-14:16:44.413 53ac Reusing old log D:\ThucHanh\tool\toolface\bot_profile\Default\Local Storage\leveldb/000003.log 
+2026/06/06-20:45:49.064 42a8 Reusing MANIFEST D:\ThucHanh\tool\toolface\bot_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/06/06-20:45:49.074 42a8 Recovering log #3
+2026/06/06-20:45:49.076 42a8 Reusing old log D:\ThucHanh\tool\toolface\bot_profile\Default\Local Storage\leveldb/000003.log 
+2026/06/06-20:46:04.968 3844 Level-0 table #5: started
+2026/06/06-20:46:04.974 3844 Level-0 table #5: 39923 bytes OK
+2026/06/06-20:46:04.977 3844 Delete type=0 #3

@@ -1,0 +1,12 @@
+{
+  "composer": [610, 470],
+  "photo_button": [633, 648],
+  "post_button": {
+    "images_0_lines_1_3": [590, 722],
+    "images_0_lines_4_8": [590, 775],
+    "images_0_lines_9_plus": [590, 829],
+    "images_1_lines_1_3": [590, 829],
+    "images_1_lines_4_8": [590, 850],
+    "images_1_lines_9_plus": [590, 840]
+  }
+}

@@ -1,107 +1,227 @@
-import time
-import random
-import re
+import json
 import os
-from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
-from playwright_stealth import stealth_sync
+import random
+import subprocess
+import time
 
-BOT_PROFILE_PATH = os.path.join(os.path.dirname(__file__), "bot_profile")
+import pyautogui
+import pyperclip
 
-def post_to_all(content: str, urls: list[str], log):
-    with sync_playwright() as p:
-        browser = p.chromium.launch_persistent_context(
-            user_data_dir=BOT_PROFILE_PATH,
-            channel="msedge",
-            headless=False,
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        )
 
-        page = browser.pages[0] if browser.pages else browser.new_page()
-        stealth_sync(page)
+EDGE_PROFILE_DIRECTORY = os.environ.get("EDGE_PROFILE_DIRECTORY", "Default")
+POSITIONS_PATH = os.path.join(os.path.dirname(__file__), "positions.json")
 
-        log("Đang mở Facebook...")
-        page.goto("https://www.facebook.com/", timeout=30000)
-        page.wait_for_load_state("domcontentloaded")
+# Keep the browser fixed so click coordinates stay stable.
+BROWSER_X = int(os.environ.get("FB_BROWSER_X", "0"))
+BROWSER_Y = int(os.environ.get("FB_BROWSER_Y", "0"))
+BROWSER_WIDTH = int(os.environ.get("FB_BROWSER_WIDTH", "1200"))
+BROWSER_HEIGHT = int(os.environ.get("FB_BROWSER_HEIGHT", "900"))
 
-        if "login" in page.url or page.locator('[data-testid="royal_login_button"]').count() > 0:
-            log("Chưa đăng nhập. Vui lòng đăng nhập trong cửa sổ (tối đa 90s)...")
-            try:
-                page.wait_for_function(
-                    "() => !window.location.href.includes('login')",
-                    timeout=90000
-                )
-            except PWTimeout:
-                log("Hết thời gian chờ đăng nhập.")
-                browser.close()
-                return
+# Coordinates below are absolute screen coordinates for the fixed browser window.
+# Adjust these once for your screen/Facebook layout if clicks land in the wrong place.
+COMPOSER_CLICK = (
+    int(os.environ.get("FB_COMPOSER_X", "610")),
+    int(os.environ.get("FB_COMPOSER_Y", "470")),
+)
+POST_BUTTON_CLICK = (
+    int(os.environ.get("FB_POST_BUTTON_X", "590")),
+    int(os.environ.get("FB_POST_BUTTON_Y", "722")),
+)
+POST_BUTTON_AFTER_IMAGE_CLICK = (
+    int(os.environ.get("FB_POST_BUTTON_AFTER_IMAGE_X", "590")),
+    int(os.environ.get("FB_POST_BUTTON_AFTER_IMAGE_Y", "829")),
+)
+PHOTO_BUTTON_CLICK = (
+    int(os.environ.get("FB_PHOTO_BUTTON_X", "633")),
+    int(os.environ.get("FB_PHOTO_BUTTON_Y", "648")),
+)
 
-        log("Đã đăng nhập. Bắt đầu đăng bài...")
+PAGE_LOAD_SECONDS = float(os.environ.get("FB_PAGE_LOAD_SECONDS", "10"))
+COMPOSER_OPEN_SECONDS = float(os.environ.get("FB_COMPOSER_OPEN_SECONDS", "3"))
+BEFORE_POST_SECONDS = float(os.environ.get("FB_BEFORE_POST_SECONDS", "2"))
+FILE_DIALOG_SECONDS = float(os.environ.get("FB_FILE_DIALOG_SECONDS", "2"))
+IMAGE_UPLOAD_SECONDS = float(os.environ.get("FB_IMAGE_UPLOAD_SECONDS", "8"))
+TYPE_DELAY_MIN = float(os.environ.get("FB_TYPE_DELAY_MIN", "0.08"))
+TYPE_DELAY_MAX = float(os.environ.get("FB_TYPE_DELAY_MAX", "0.18"))
 
-        for i, url in enumerate(urls, 1):
-            log(f"[{i}/{len(urls)}] Đang xử lý: {url}")
-            try:
-                _post_to_url(page, url, content, log)
-                log(f"  ✓ Đăng thành công")
-            except Exception as e:
-                page.screenshot(path=f"error_{i}.png")
-                log(f"  ✗ Lỗi: {e} (đã lưu ảnh error_{i}.png)")
-            if i < len(urls):
-                delay = random.uniform(5, 15)
-                log(f"  Chờ {delay:.1f}s...")
-                time.sleep(delay)
+pyautogui.FAILSAFE = True
+pyautogui.PAUSE = 0.2
+POSITIONS = {}
 
-        browser.close()
-        log("Hoàn tất!")
 
-def _post_to_url(page, url: str, content: str, log):
-    page.goto(url, timeout=45000)
-    page.wait_for_load_state("networkidle")
-    time.sleep(random.uniform(10, 15))
+def post_to_all(content: str, urls: list[str], log, image_path: str | None = None):
+    _load_positions()
+    log("Dang dung che do auto-click tren Edge that.")
+    log("Hay dung chuot len goc tren-ben-trai man hinh de dung khan cap.")
+    if image_path:
+        log(f"Se dang kem anh: {image_path}")
 
-    # 1. Dismiss overlay/popup: click vùng trắng + đóng dialog nếu có
-    page.mouse.click(0, 0)
-    time.sleep(1)
-    page.keyboard.press("Escape")
-    time.sleep(1)
+    for i, url in enumerate(urls, 1):
+        log(f"[{i}/{len(urls)}] Mo Edge: {url}")
+        try:
+            _post_to_url(url, content, log, image_path)
+            log("  Dang bai xong theo luong auto-click.")
+        except pyautogui.FailSafeException:
+            log("  Da dung khan cap vi chuot duoc dua vao goc tren-ben-trai.")
+            return
+        except Exception as e:
+            log(f"  Loi auto-click: {e}")
 
-    close_btns = page.locator('div[aria-label="Đóng"]').all()
-    for btn in close_btns:
-        if btn.is_visible():
-            btn.click()
-            time.sleep(1)
+        if i < len(urls):
+            delay = random.uniform(8, 15)
+            log(f"  Cho {delay:.1f}s truoc URL tiep theo...")
+            time.sleep(delay)
 
-    # 2. Click ô soạn thảo
-    page.goto(url, timeout=45000)
-    page.wait_for_load_state("networkidle")
-    time.sleep(random.uniform(5, 8))
+    log("Hoan tat!")
 
-    # 1. Tìm container cha có role="button" và chứa text mục tiêu
-    # Cách này đảm bảo ta chọn đúng cái button tổng bao quanh chữ "Bạn viết gì đi..."
-    composer_locator = page.locator('div[role="button"]:has(span:text("Bạn viết gì đi..."))').first
-    
-    # 2. Sử dụng tọa độ của phần tử này để click thay vì dùng .click() thông thường
-    # Điều này tránh được các lỗi do lớp phủ (overlay) hoặc sự kiện chặn click của Facebook
-    if composer_locator.is_visible():
-        box = composer_locator.bounding_box()
-        # Click vào tâm của button
-        page.mouse.click(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
-        log("Đã click vào ô nhập liệu dựa trên phân cấp DOM.")
+
+def _post_to_url(url: str, content: str, log, image_path: str | None):
+    _open_edge(url)
+    log(f"Da mo Edge kich thuoc {BROWSER_WIDTH}x{BROWSER_HEIGHT} tai ({BROWSER_X}, {BROWSER_Y}).")
+    log(f"Cho trang tai {PAGE_LOAD_SECONDS:.1f}s...")
+    time.sleep(PAGE_LOAD_SECONDS)
+
+    _fix_edge_window(log)
+    pyautogui.press("esc")
+    time.sleep(0.5)
+
+    composer_click = _position("composer", COMPOSER_CLICK)
+    log(f"Click o viet bai tai {composer_click}.")
+    _human_click(*composer_click)
+    time.sleep(COMPOSER_OPEN_SECONDS)
+
+    if image_path:
+        _attach_image(image_path, log)
+
+    log("Nhap noi dung truc tiep vao form dang bai.")
+    _type_text_slow(content)
+    time.sleep(BEFORE_POST_SECONDS)
+
+    _click_post_button(log, bool(image_path), content)
+    time.sleep(3)
+
+
+def _open_edge(url: str):
+    subprocess.Popen(
+        [
+            _edge_executable(),
+            "--new-window",
+            f"--profile-directory={EDGE_PROFILE_DIRECTORY}",
+            f"--window-position={BROWSER_X},{BROWSER_Y}",
+            f"--window-size={BROWSER_WIDTH},{BROWSER_HEIGHT}",
+            url,
+        ],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def _edge_executable() -> str:
+    candidates = [
+        os.path.join(os.environ.get("ProgramFiles(x86)", ""), "Microsoft", "Edge", "Application", "msedge.exe"),
+        os.path.join(os.environ.get("ProgramFiles", ""), "Microsoft", "Edge", "Application", "msedge.exe"),
+    ]
+    for candidate in candidates:
+        if candidate and os.path.exists(candidate):
+            return candidate
+    return "msedge"
+
+
+def _fix_edge_window(log):
+    try:
+        windows = pyautogui.getWindowsWithTitle("Facebook") or pyautogui.getWindowsWithTitle("Edge")
+        if not windows:
+            return
+        window = windows[0]
+        window.activate()
+        window.moveTo(BROWSER_X, BROWSER_Y)
+        window.resizeTo(BROWSER_WIDTH, BROWSER_HEIGHT)
+    except Exception as e:
+        log(f"Khong resize duoc cua so Edge bang pyautogui, tiep tuc dung kich thuoc launch: {e}")
+
+
+def _human_click(x: int, y: int):
+    pyautogui.moveTo(
+        x + random.randint(-3, 3),
+        y + random.randint(-3, 3),
+        duration=random.uniform(0.15, 0.35),
+    )
+    pyautogui.click()
+
+
+def _attach_image(image_path: str, log):
+    if not os.path.exists(image_path):
+        raise FileNotFoundError(f"Khong tim thay file anh: {image_path}")
+
+    photo_button = _position("photo_button", PHOTO_BUTTON_CLICK)
+    log(f"Click nut them anh tai {photo_button}.")
+    _human_click(*photo_button)
+    time.sleep(FILE_DIALOG_SECONDS)
+
+    log("Dang chon file anh trong hop thoai Windows.")
+    pyperclip.copy(os.path.abspath(image_path))
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.press("enter")
+
+    log(f"Cho anh upload {IMAGE_UPLOAD_SECONDS:.1f}s...")
+    time.sleep(IMAGE_UPLOAD_SECONDS)
+
+
+def _click_post_button(log, has_image: bool, content: str):
+    image_count = 1 if has_image else 0
+    visual_lines = _estimate_visual_lines(content)
+    post_button = _post_button_position(image_count, visual_lines)
+    key = _post_button_key(image_count, visual_lines)
+    log(f"Click nut Dang theo dataset {key}: {post_button}.")
+    _human_click(*post_button)
+
+
+def _load_positions():
+    global POSITIONS
+    if POSITIONS:
+        return
+    try:
+        with open(POSITIONS_PATH, "r", encoding="utf-8") as file:
+            POSITIONS = json.load(file)
+    except (OSError, json.JSONDecodeError):
+        POSITIONS = {}
+
+
+def _position(name: str, fallback: tuple[int, int]) -> tuple[int, int]:
+    value = POSITIONS.get(name)
+    if isinstance(value, list) and len(value) == 2:
+        return (int(value[0]), int(value[1]))
+    return fallback
+
+
+def _post_button_position(image_count: int, visual_lines: int) -> tuple[int, int]:
+    fallback = POST_BUTTON_AFTER_IMAGE_CLICK if image_count else POST_BUTTON_CLICK
+    value = POSITIONS.get("post_button", {}).get(_post_button_key(image_count, visual_lines))
+    if isinstance(value, list) and len(value) == 2:
+        return (int(value[0]), int(value[1]))
+    return fallback
+
+
+def _post_button_key(image_count: int, visual_lines: int) -> str:
+    if visual_lines <= 3:
+        bucket = "1_3"
+    elif visual_lines <= 8:
+        bucket = "4_8"
     else:
-        # Nếu vẫn không thấy, thử dùng CSS selector cực cụ thể cho cấu trúc bạn mô tả
-        page.locator('div[role="button"] > div > span:text("Bạn viết gì đi...")').first.click(force=True)
+        bucket = "9_plus"
+    return f"images_{image_count}_lines_{bucket}"
 
-    # 3. Đợi dialog và nhập nội dung
-    page.wait_for_selector('div[role="dialog"]', timeout=20000)
-    dialog = page.locator('div[role="dialog"]')
 
-    text_input = dialog.locator('div[role="textbox"]').first
-    text_input.click()
-    page.keyboard.type(content, delay=150)
-    time.sleep(2)
+def _estimate_visual_lines(text: str) -> int:
+    lines = 0
+    for raw_line in text.splitlines() or [""]:
+        line_length = max(len(raw_line), 1)
+        lines += max(1, (line_length + 44) // 45)
+    return lines
 
-    # 4. Click nút Đăng
-    post_btn = dialog.get_by_role("button", name=re.compile(r"Đăng", re.IGNORECASE)).first
-    post_btn.evaluate("node => node.click()")
-    log("Đã kích hoạt nút Đăng.")
 
-    time.sleep(random.uniform(5, 8))
+def _type_text_slow(text: str):
+    for char in text:
+        pyperclip.copy(char)
+        pyautogui.hotkey("ctrl", "v")
+        time.sleep(random.uniform(TYPE_DELAY_MIN, TYPE_DELAY_MAX))

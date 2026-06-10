@@ -1,0 +1,774 @@
+{
+   "checksum": "372dd6d9426d765c504a28cfe7f34eb1",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13360772297353175",
+               "date_last_used": "13408444529491104",
+               "guid": "3b046c1f-4d4f-48c5-b80c-95f09cf148ec",
+               "id": "13",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "DeepLearning.AI: Start or Advance Your Career in AI",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.deeplearning.ai/",
+               "visit_count": 3
+            }, {
+               "date_added": "13368068222248471",
+               "date_last_used": "13408444531795246",
+               "guid": "d3c58d0a-4da7-4383-9558-15e97e757737",
+               "id": "14",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "page anti - Google Sheets",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://docs.google.com/spreadsheets/d/1NJ2bw_mYiWeiCtmd7y-fg5586NFFw4ahoJLF6W1w1l8/edit?gid=0#gid=0",
+               "visit_count": 15
+            }, {
+               "date_added": "13373090197123517",
+               "date_last_used": "13408444947089484",
+               "guid": "b4e90bb1-30ae-40d7-80ef-e7bc74f5352f",
+               "id": "15",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "0xl4p/Giao-Trinh-PTIT: Toàn bộ giáo trình các học phần của PTIT",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/0xl4p/Giao-Trinh-PTIT/tree/main",
+               "visit_count": 6
+            }, {
+               "date_added": "13373687458973420",
+               "date_last_used": "13388654445328269",
+               "guid": "bcfcca06-e0bf-4888-85af-deeb4a7f5698",
+               "id": "16",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Hệ điều hành - Học liệu - Google Drive",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://drive.google.com/drive/folders/1bZavDP6yRm8i3XrLHD6FKxtZ7CRKZGrn",
+               "visit_count": 5
+            }, {
+               "date_added": "13402223505418326",
+               "date_last_used": "13420627005888105",
+               "guid": "9dacd508-3c03-4c71-bc10-c68051fcf448",
+               "id": "17",
+               "name": "Tutorials – Software: Art of Design and Programming",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://softwaredesign.home.blog/tutorials/",
+               "visit_count": 49
+            } ],
+            "date_added": "13357720881680222",
+            "date_last_used": "0",
+            "date_modified": "13402223505418326",
+            "guid": "669761af-3189-4207-9606-98ad47cea4c1",
+            "id": "12",
+            "name": "Kiến Thức",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13337628326752778",
+               "date_last_used": "13405424652648999",
+               "guid": "ca5c00db-2412-45cb-b41b-3cd3ff6c69a0",
+               "id": "19",
+               "name": "yalza/DSA-code.ptit: FULL 362/362 BÀI DSA TRÊN code.ptit.edu.vn",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/yalza/DSA-code.ptit",
+               "visit_count": 4
+            }, {
+               "date_added": "13342698615655301",
+               "date_last_used": "13368772196739197",
+               "guid": "edc9bf07-cf0b-4284-8b7e-ec82b0e7112b",
+               "id": "20",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "cityuongbi/Data_Structures_and_Algorithms_PTIT: Full source code DSA on code.ptit.edu.vn",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/cityuongbi/Data_Structures_and_Algorithms_PTIT",
+               "visit_count": 0
+            }, {
+               "date_added": "13354712347004320",
+               "date_last_used": "13403860410805713",
+               "guid": "990fe30d-88bc-4010-9981-98bc247e98fc",
+               "id": "21",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "nyagami/Python-PTIT",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/nyagami/Python-PTIT",
+               "visit_count": 1
+            }, {
+               "date_added": "13352891314110586",
+               "date_last_used": "13378370013365360",
+               "guid": "5cc6675c-d947-4fca-b329-ad5e6d667cc5",
+               "id": "22",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Lazygarde/Python_Code_PTIT",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/Lazygarde/Python_Code_PTIT",
+               "visit_count": 2
+            }, {
+               "date_added": "13368298067910825",
+               "date_last_used": "0",
+               "guid": "10906d61-a740-4dee-a390-aceffe300d57",
+               "id": "23",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Bootstrap Templates | Premium & Free Download | BootstrapMade",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://bootstrapmade.com/",
+               "visit_count": 0
+            }, {
+               "date_added": "13369379799162869",
+               "date_last_used": "13402657027151944",
+               "guid": "8cf6fd9a-7a93-416c-9bc6-bebbae13f6bd",
+               "id": "24",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "NgTienHungg/PTIT-Source: Learn and practice coding in PTIT",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/NgTienHungg/PTIT-Source",
+               "visit_count": 42
+            }, {
+               "date_added": "13384327826144773",
+               "date_last_used": "13385152484298519",
+               "guid": "808c992b-df97-468b-b045-bd2d7e1ab2e9",
+               "id": "25",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "VishwaduttMS/eCommerce-website-using-HTML-CSS-PHP-and-MySQL-database: This is an eCommerce website designed using HTML, CSS, JS, Bootstrap, PHP and integrated with MySQLi database. The information of all users, items as well as the items purchased by each user will be stored securely in the database.",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/VishwaduttMS/eCommerce-website-using-HTML-CSS-PHP-and-MySQL-database/tree/master",
+               "visit_count": 4
+            }, {
+               "date_added": "13388517034215695",
+               "date_last_used": "13405852552285730",
+               "guid": "f0910a98-a937-41fa-a486-e853f4fe5beb",
+               "id": "26",
+               "name": "Frontend Developer Roadmap: What is Frontend Development?",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://roadmap.sh/frontend",
+               "visit_count": 10
+            }, {
+               "date_added": "13389872174543342",
+               "date_last_used": "0",
+               "guid": "ef848558-acfc-49ee-adfd-3b19d740a70e",
+               "id": "27",
+               "name": "Lovable",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://lovable.dev/",
+               "visit_count": 1
+            }, {
+               "date_added": "13398960354231935",
+               "date_last_used": "0",
+               "guid": "241320ea-a471-40f0-93c3-f314bc8ff46f",
+               "id": "28",
+               "name": "Getting started | stagewise Docs",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://stagewise.io/docs",
+               "visit_count": 1
+            }, {
+               "date_added": "13402861103294707",
+               "date_last_used": "0",
+               "guid": "7f8e0281-abd7-4349-9153-db1f28f17282",
+               "id": "29",
+               "name": "Backend Developer Roadmap: What is Backend Development",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://roadmap.sh/backend",
+               "visit_count": 1
+            }, {
+               "date_added": "13406811360825254",
+               "date_last_used": "0",
+               "guid": "3b31dc44-9f36-4e55-b8f5-7a492b2177c5",
+               "id": "30",
+               "name": "theonemule/psrd: A remote desktop client/server app implemented in PowerShell",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/theonemule/psrd",
+               "visit_count": 1
+            }, {
+               "date_added": "13421305254691475",
+               "date_last_used": "0",
+               "guid": "48104fbe-8c8e-41ea-a4f0-ede19ca30183",
+               "id": "31",
+               "name": "FastAptis - Học Tiếng Anh ôn thi Aptis cấp tốc Online",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://fastaptis.com/dashboard",
+               "visit_count": 1
+            } ],
+            "date_added": "13357720892526347",
+            "date_last_used": "0",
+            "date_modified": "13421305254691475",
+            "guid": "aec61e17-5670-4ff7-bcf2-1f237e806404",
+            "id": "18",
+            "name": "Tham Khảo",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13348257205202532",
+               "date_last_used": "13425192222800240",
+               "guid": "b6b75db4-b15c-4aff-9b42-27d74cebcee1",
+               "id": "33",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Thư - Chu Hung Dung D22CN03 - Outlook",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://outlook.office.com/mail/",
+               "visit_count": 39
+            }, {
+               "date_added": "13403113061826226",
+               "date_last_used": "13424318648968899",
+               "guid": "cd2021c4-f17b-4633-aaf8-eceda5ac1c5d",
+               "id": "34",
+               "name": "Your projects - Overleaf, Online LaTeX Editor",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.overleaf.com/project",
+               "visit_count": 11
+            }, {
+               "date_added": "13406654006542024",
+               "date_last_used": "13424366700894622",
+               "guid": "0193a9ea-4600-4473-9043-f3af748b1db7",
+               "id": "35",
+               "name": "Meet - ome-bnor-hev",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://meet.google.com/ome-bnor-hev",
+               "visit_count": 69
+            }, {
+               "date_added": "13406807837550387",
+               "date_last_used": "13421257551469275",
+               "guid": "6ff06f8f-d9f3-4000-b8e4-c06639024fde",
+               "id": "36",
+               "name": "Meet - ayd-oxsm-uwb",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://meet.google.com/ayd-oxsm-uwb",
+               "visit_count": 41
+            }, {
+               "date_added": "13407430554484922",
+               "date_last_used": "13425034401125504",
+               "guid": "34686bd6-cd94-4531-ba4a-d98fb9098a3a",
+               "id": "37",
+               "name": "Meet - noh-tdou-imv",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://meet.google.com/noh-tdou-imv",
+               "visit_count": 20
+            } ],
+            "date_added": "13357720949582408",
+            "date_last_used": "0",
+            "date_modified": "13407430554484922",
+            "guid": "c253f8e9-d86e-4b7d-8b4d-548881736d00",
+            "id": "32",
+            "name": "Liên Lạc",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13387127814321779",
+               "date_last_used": "13402039155225388",
+               "guid": "7dc207e9-2e61-4a5d-ba53-547d52a19492",
+               "id": "39",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Coze",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.coze.com/space/7341327935170822145/develop",
+               "visit_count": 2
+            }, {
+               "date_added": "13383827300254569",
+               "date_last_used": "13386844541673400",
+               "guid": "852d3d9b-b7dd-4bad-973d-e8d7d6ade9eb",
+               "id": "40",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "v0 by Vercel",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://v0.dev/",
+               "visit_count": 4
+            }, {
+               "date_added": "13392838703981861",
+               "date_last_used": "0",
+               "guid": "3a62302e-e554-4bce-a96d-ccaf68073558",
+               "id": "41",
+               "name": "Postgres.AI",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://postgres.ai/",
+               "visit_count": 1
+            }, {
+               "date_added": "13399049278776043",
+               "date_last_used": "13414345819593808",
+               "guid": "673d1c22-9c77-4213-8399-6642ee4e0e5b",
+               "id": "42",
+               "name": "Nghiện Thuốc",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://cokeep.me/spaces/FF6XNV78J",
+               "visit_count": 4
+            }, {
+               "date_added": "13402342657129535",
+               "date_last_used": "13414345816324218",
+               "guid": "ce60729c-d23f-4af1-9f67-4e81cda43c31",
+               "id": "43",
+               "name": "RocketReach Lead Intelligence: Phone and Email Finder",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://rocketreach.co/",
+               "visit_count": 4
+            }, {
+               "date_added": "13386243652866906",
+               "date_last_used": "13388169565624256",
+               "guid": "016dafe0-2bb8-4588-ae6b-4352da738534",
+               "id": "44",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Tài Nguyên Miễn Phí | Share Khóa Học Miễn Phí",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://tainguyenmienphi.com/",
+               "visit_count": 5
+            }, {
+               "date_added": "13417693404309624",
+               "date_last_used": "0",
+               "guid": "00baacb4-5962-4424-bf75-e34ecdef0500",
+               "id": "45",
+               "name": "Mật Khẩu Shop - Đăng Ký Tài Khoản Thật Dễ Dàng",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://matkhau.vn/",
+               "visit_count": 1
+            }, {
+               "date_added": "13414345849239856",
+               "date_last_used": "0",
+               "guid": "d8578493-713a-4aa7-a9d2-dd9efe99d75c",
+               "id": "46",
+               "name": "Group thuộc cộng đồng Nghiện Plus",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://nghienplus.net/groups",
+               "visit_count": 1
+            }, {
+               "date_added": "13383827368405881",
+               "date_last_used": "13386147253335272",
+               "guid": "690197be-a261-4e91-8a05-8b1bedacf1dd",
+               "id": "47",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "PureCode AI - Generate UI Using AI",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://purecode.ai/",
+               "visit_count": 3
+            }, {
+               "date_added": "13359046017540225",
+               "date_last_used": "13395677329183874",
+               "guid": "3db0749d-17fc-4b94-8c51-d804733043d0",
+               "id": "48",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "RawChat公益站点",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://sharedchat.fun/",
+               "visit_count": 5
+            }, {
+               "date_added": "13386147054444702",
+               "date_last_used": "13417769873016554",
+               "guid": "4242f207-a3a9-46fc-ad9d-582283b8a38c",
+               "id": "49",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Reweb — The visual builder for developers",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.reweb.so/",
+               "visit_count": 2
+            }, {
+               "date_added": "13403088914660973",
+               "date_last_used": "13417769886960753",
+               "guid": "dc85974f-f601-46a4-b7f6-22bbb36c64ab",
+               "id": "50",
+               "name": "Temp Mail - Disposable Temporary Email",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://temp-mail.org/",
+               "visit_count": 2
+            }, {
+               "date_added": "13394220435779776",
+               "date_last_used": "13417769891169963",
+               "guid": "e39d9402-739d-4fab-bfbd-bd11d8f11772",
+               "id": "51",
+               "name": "Random Credit Card Number Generator for Testing and Development - Namsogen",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://namso-gen.com/?tab=advance&network=random",
+               "visit_count": 4
+            }, {
+               "date_added": "13418876862524335",
+               "date_last_used": "13424327335095617",
+               "guid": "773058c2-1bb6-4726-aec7-ca4306d0c838",
+               "id": "52",
+               "name": "2FA Auth - Two Factor Authenticator",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://2fa.live/",
+               "visit_count": 2
+            } ],
+            "date_added": "13417769801384527",
+            "date_last_used": "0",
+            "date_modified": "13418876862524335",
+            "guid": "39dfbe2c-0d2f-4616-b241-c99a25024f7b",
+            "id": "38",
+            "name": "abc",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13422639508291936",
+            "date_last_used": "13424856096494585",
+            "guid": "65a8da6b-5985-4725-85f5-10344edfe39e",
+            "id": "53",
+            "name": "Your family on Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://myaccount.google.com/family/details?utm_source=googleaccount&utm_medium=default",
+            "visit_count": 3
+         }, {
+            "children": [ {
+               "date_added": "13417883365296126",
+               "date_last_used": "13417888646782964",
+               "guid": "dcb6c562-f538-47d9-b131-a75e69a98926",
+               "id": "55",
+               "name": "Case Details | AWS Support Console",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://support.console.aws.amazon.com/support/home?interactionId=0ca14a66-5ca9-4dc3-853e-745f46877acc&issueType=customer-service&serviceCode=account-management&categoryCode=phone-verification#/case/?displayId=177340974900426&language=en",
+               "visit_count": 2
+            }, {
+               "date_added": "13417886824173108",
+               "date_last_used": "13417888787055876",
+               "guid": "5c5b9015-a9f6-4b47-8906-ebcd5ff32b79",
+               "id": "56",
+               "name": "Console Home | Console Home | ap-southeast-2",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://ap-southeast-2.console.aws.amazon.com/console/home?region=ap-southeast-2",
+               "visit_count": 2
+            } ],
+            "date_added": "13417883378453146",
+            "date_last_used": "0",
+            "date_modified": "13417886824173108",
+            "guid": "4bc4fd6c-3992-4381-91a0-6c6610ecc2de",
+            "id": "54",
+            "name": "aws",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13350642970983016",
+               "date_last_used": "13424199015317431",
+               "guid": "c4e9e859-46f3-4ce4-a1f1-e5639f16a115",
+               "id": "58",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Yandex",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://yandex.com/",
+               "visit_count": 5
+            }, {
+               "date_added": "13360412232681061",
+               "date_last_used": "13424327205833266",
+               "guid": "45c59345-42f5-459b-babb-e5307a657bf8",
+               "id": "59",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Paraphrasing Tool - QuillBot AI",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://quillbot.com/paraphrasing-tool",
+               "visit_count": 2
+            }, {
+               "date_added": "13364575712413699",
+               "date_last_used": "13424327214124886",
+               "guid": "213cff97-9b9e-4fa2-96ef-465497f9d775",
+               "id": "60",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://kgc-coupon.awesomepiece.com/coupon?lang=en&fbclid=IwZXh0bgNhZW0CMTAAAR3MmUOS5yLkIcizFSkqY7-GH1FHM3k-XVTp6eeM5BLunjFgkro7v8VKDwE_aem_eSn2slZjcnitALOBRZKF9w",
+               "visit_count": 10
+            }, {
+               "date_added": "13365072047073706",
+               "date_last_used": "13416895461056431",
+               "guid": "3fe6b75b-489d-4a67-8378-027d9a582257",
+               "id": "61",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Remove Background from Image for Free – remove.bg",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.remove.bg/",
+               "visit_count": 4
+            }, {
+               "date_added": "13369982170099543",
+               "date_last_used": "13422446841897655",
+               "guid": "057be4ad-64b7-406b-a5a3-4585d7091fa5",
+               "id": "62",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "VirusTotal - Home",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.virustotal.com/gui/home/upload",
+               "visit_count": 14
+            }, {
+               "date_added": "13365072072126515",
+               "date_last_used": "13424327197630801",
+               "guid": "11ce85bf-62a9-4158-9b03-7203837f31dd",
+               "id": "63",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Logo Design & Brand Identity for Entrepreneurs | Looka",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://looka.com/",
+               "visit_count": 5
+            }, {
+               "date_added": "13424327174138296",
+               "date_last_used": "13424769632369293",
+               "guid": "1a6cd002-c875-4185-952e-beccc381cfcc",
+               "id": "64",
+               "name": "Viotp - Cho Thuê Sim Code OTP SMS",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://viotp.com/",
+               "visit_count": 3
+            } ],
+            "date_added": "13357720969978680",
+            "date_last_used": "0",
+            "date_modified": "13424327174138296",
+            "guid": "0e826f44-5f69-4946-a7a9-f5abb0bddbf7",
+            "id": "57",
+            "name": "Tiện ích",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13425059141415037",
+            "date_last_used": "13425059145932177",
+            "guid": "22325702-8dd1-4e59-ac61-ee348d435f2d",
+            "id": "65",
+            "name": "ChatGPT Plus card code activated",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://baxigpt.com/",
+            "visit_count": 2
+         }, {
+            "date_added": "13424858161688397",
+            "date_last_used": "0",
+            "guid": "2ef5887e-2848-4e89-a987-49835fabe738",
+            "id": "9",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13424858161687933",
+            "date_last_used": "0",
+            "guid": "8a46203f-8ced-4840-938d-c4e9fb7e68aa",
+            "id": "8",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13424858161687288",
+            "date_last_used": "0",
+            "guid": "a7d41cd2-6b31-439d-b994-f385c4f88fd0",
+            "id": "7",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         } ],
+         "date_added": "13424858161519839",
+         "date_last_used": "0",
+         "date_modified": "13425059141415037",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13424858161519839",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13288705116490773",
+            "date_last_used": "0",
+            "guid": "37bf1670-36c1-4dbc-ae79-4431a64b37f5",
+            "id": "66",
+            "name": "130+ GhostBlade HD Wallpapers | Background Images",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://wall.alphacoders.com/by_sub_category.php?id=240262&name=GhostBlade%20Wallpapers&fbclid=IwAR1M7JxWN0Rno7vSggoqddYQg19qqPVL7g2K6mkCwsle5YdeCUEwQ9LV6X4",
+            "visit_count": 0
+         }, {
+            "date_added": "13288705316789681",
+            "date_last_used": "0",
+            "guid": "dacb56e1-dc5a-42aa-ada5-fa8a7c84506c",
+            "id": "67",
+            "name": "ghostblade, wlop, baby / 无题 - pixiv",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.pixiv.net/en/artworks/88174531?fbclid=IwAR1wOXVe6go3Fxp3Swjs0K474Ic8-9pKNGyOAySMS-ljzuJ6i1fb2wSvgA0",
+            "visit_count": 0
+         }, {
+            "date_added": "13289678310850509",
+            "date_last_used": "0",
+            "guid": "416c48b2-c2ae-4497-8232-09198231f30c",
+            "id": "68",
+            "name": "ArtStation - WLOP",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.artstation.com/wlop",
+            "visit_count": 0
+         } ],
+         "date_added": "13424858161519839",
+         "date_last_used": "0",
+         "date_modified": "13289678310850509",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13424858161519839",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCCrfGZueAQAAEgAqGG5XVVNHSTBVVUg4S3UvTzhVei85Qnc9PUgDoAYHEq0BCEMSqAEKHEVqelA2OFpkTlcycnhZbE1EQWd0NzBwekJSTT0SJGRhY2I1NmUxLWRjNWEtNDJhYS1hZGE1LWZhOGE3Yzg0NTA2YxgAIAAoADDi787L0jA4iPHOy9IwQIjxzsvSMEocMXJ4QytpbXVXakNjS1VxQW9TS3NLM001alZZPVofIh36eWJBRHBSUGdZTmhaSTJiVnVuZUlGaGNxdWtFPWUWpHVfwj4CYAUSrgEIQRKpAQocZFRqUXJwYitlbkJsVkthMTV6Vm1JK0tSQWZBPRIkMjIzMjU3MDItOGRkMS00ZTU5LWFjNjEtZWUzNDhkNDM1ZjJkGAAgACgAMPGSrZnpMzi58ayZ6TNAufGsmekzShxpaWxtTHgwbWczWmF0NGphM0ZQamFwdXRYbkk9WiAiHv/Ud0dQczRTL3VLRWwxbnFQdnNYWVJFckFKUHNFPWUAAAAAwj4CYAUStAEIQBKvAQocMmMweVZXWkJtQmxieHE2cnI1VDE2Z0xBcmIwPRIkMWE2Y2QwMDItYzg3NS00MTg1LTk1MmUtYmVjY2MzODFjZmNjGAAgACgAMNPTpo/oMzjRk6m85jNA0ZOpvOYzShx5alVlM0ViL3d6U0ppdUREYzlTWEEwZjhqNDg9WiYiJP////8AAAAEOTdyRkx0ckx3M2NtN3hrYnhEa0kyMXc2M2cwPWV/bfDdwj4CYAUSsAEIPxKrAQocZE1LcG04dlRsMUVsbWtMWFZBMUdibCtFbWNRPRIkMTFjZTg1YmYtNjJhOS00MTU4LTliMDMtNzIwMzgzN2YzMWRkGAAgACgAMK/JqrzmMziis72loTJAorO9paEyShxrdnAzNEUrd2NFa2RKSVJRaVFWTlVkUytNU2M9WiIiIP////trMXBIZ3RydDFtczA2WTFLZFg2MHNHb21ybDA9Zfw4sLfCPgJgBRKtAQg7EqgBChx3M1hzVjVDWjUyWWlqeVBOODRtQjd6ZU5uT3M9EiQ0NWM1OTM0NS00MmY1LTQ1OWItYmFiYi1lNTMwN2E2NTdiZjgYACAAKAAwl4mrvOYzOJ7tpq/4MUCe7aav+DFKHEh3bVhwZnE2NlBMRTRLTFYzYUwyZ2J0am00MD1aHyId91piWGFFY2wrV3BoODBtckE4cjhkK09ZUVIvOD1lt/CaPsI+AmAFEq4BCDkSqQEKHHN1NnZqRE5BMUM1Yjl2RHA5UEMxMmt5ZDJoRT0SJDBlODI2ZjQ0LTVmNjktNDk0Ni1hN2E5LWY1YWJiMGJkZGJmNxgAIAAoADD/u8az6DM4xLCFrO4xQMSwhazuMUocRDF4Y3dPRmxyOGhQQUpnM1lvQnRmckduQlo4PVogIh7/qEZ1c09ReGFRRTdwUHhBV0tSc3FUb2txY0FOTT1lAAAAAMI+AmAAEq0BCDgSqAEKHGJPN2tURTNJbU01bjJodFBwQ3cwU2pkTWpkST0SJDVjNWI5MDE1LWE5ZjYtNGI0Ny04OTA2LWViY2Q1ZmYzMmI3ORgAIAAoADDZg6KNzzM47b6pvc4zQO2+qb3OM0ocdHY5emJHdlFWakFCUUFoUlB3K253NkZadzMwPVofIh26cHllMFR4M09FMWFkbkJSQ2ZmR29IZ0RXZzBrPWXaZAk7wj4CYAUSrQEIDhKoAQocVTBVc0VMTEx6TjFxOHdEMnpjY0ZxMHJpWHk4PRIkZDNjNThkMGEtNGRhNy00MzgzLTk1NTgtMTVlOTdlNzU3NzM3GAAgACgAMNSev6riMziusr2loTJArrK9paEyShxRVzJKb2JITEptQjltMkZZYjM0Vm40U3cwMGc9Wh8iHf5RL09LL3FZMjVXK3d4YjFRci80c1hUTng3alk9ZZLZC9rCPgJgBRKsAQg3EqcBChw5T1RKVnFMRHVjOXZKeFZKUGZFYTh5MC9CcHM9EiRkY2I2YzU2Mi1mNTM4LTQ3ZDktYjEzMS1hNzVlNjlhOTg5MjYYACAAKAAwo9mYvs4zOJek1rvOM0CXpNa7zjNKHHBpYndnVmh1Rmh3NTVGeWRFYnJ3MzBhVmh4Yz1aHiIcdUFsSlI5T1FXbjJsMHltVlFYQTA2SkJ3NlRjPWXANNO6wj4CYAUSrgEIHxKpAQocWGo3Y0RjZzd4SWs3S0VmWWdCLzYwcHpscjIwPRIkNDgxMDRmYmUtOGM4ZS00MWVhLWE0ZjAtZWRlMTljYTMwMTgzGAAgACgAMOaLrpvbMzjQ6K2b2zNA0Oitm9szShxDWkN3MWpFYVo1QzNFYStLS2VaSHJWNXBuQTQ9WiAiHv/bWGRxZlBySkpCZklxaWlVRUxtOHAyMTNvSnVzPWXLPkzcwj4CYAUSrgEINBKpAQoccnZJRGhPelZDcDh5cG5xWkNHUmYrMlpmdnhJPRIkNzczMDU4YzItMWJiNi00NzI2LWFlYzctY2E0MzA2ZDBjODM4GAAgACgAMIfusrzmMzj307SV0jNA99O0ldIzShxrZzg3SVRURUxWU2NkLytiZGhhdkpwN3VabHM9WiAiHv/uVGZPN1BSbWF5SjJsYlE0VGpIUndpYzFtT3lFPWWzuyGYwj4CYAUSrQEIJRKoAQocSTg4S3RyUlNqaS9KVXFoeEhuM3hjL0RLOXZRPRIkMzQ2ODZiZDYtY2Q5NC00NTMxLWJhNGEtZDk4ZmI5MDk4YTNhGAAgACgAMMCix43pMzi0urHDpzNAtLqxw6czShxtRTNIeWVqaVZyNnJJRHFqN0lHMjcwb2piTzA9Wh8iHe1LYTR5M0RIbzUzS3NMMTdsd1VJdnNoWVlvMlE9ZaDJZInCPgJgBRKuAQgzEqkBChxhYXhSS1hXbEQ4MXB4dHgrUDMvWUNQTnFrZTQ9EiRlMzlkOTQwMi03MzlkLTRmYWItYmZiZC1iZDExZDhmMTE3NzIYACAAKAAwmNTIhc4zOKfep6j2MkCn3qeo9jJKHHY2RFlTOGtqU29ITlA5ZUlaWVJqV2F5Y1ZCYz1aICIe/91FdzV4TGJGdlUyUWZpZWk1SWdabXpIVGlnUHc9Za5oEnfCPgJgBRKtAQgvEqgBChxFb1ZYUHpLTHFCZXJaaWh2Z2w0UCtNS3ZmZVE9EiQ2OTAxOTdiZS1hMjYxLTRlOTEtOGEwNS04YjFiZWRhY2YxZGQYACAAKAAw263Ghc4zOIGbwczPMkCBm8HMzzJKHHZob010SlVGY2VobFExNGpvZngxZFlpenhZbz1aHyId/jlzYW9tMnpXN2xCMFlKMmE0SlY1RWZCbnc3ST1l1WHYPsI+AmAFEq4BCDISqQEKHDdVeldtOWNhWXRIb3A1S2t0SkNlbVRZNUJ3RT0SJGRjODU5NzRmLWY2MDEtNDZhNC1iN2Y2LTIyYmJiMzZjNjRhYhgAIAAoADDwsciFzjM4zZnt8J0zQM2Z7fCdM0occndwNDRHL215UmxidnQ3Mnd4UWxSeksxekdjPVogIh7/u2xMMS9VaVpaN1IwZU1Qb2dGR2hyQnEyM1BiUT1lem4EIMI+AmAFEq0BCC4SqAEKHG1KM0RyeTFpdVBLZndCTGRnazVicG9VblhKWT0SJGQ4NTc4NDkzLTcxM2EtNGFhNy1hOWQyLWRkOWVmZTk5ZDc1YxgAIAAoADCX68WFzjM4/cntpMEzQP3J7aTBM0ocSlpyZ3VHam5VZEZyTTl0d3Z3QkhLTDVSUWVzPVofIh39TDJobHJXOWFSWTBQTlc3R1A1WnI0Qm1wRnBzPWU8ysHOwj4CYAUSrQEILBKoAQocSUdnSU0yM2orUU5KbGIrejV0ZGFLZmJFZ0tvPRIkMDE2ZGFmZTAtMmJiOC00NTg4LWFlNmItNDM1MmRhNzM4NTM0GAAgACgAMNTwxIXOMzi4ztfM2DJAuM7XzNgyShxQazYwMXdwVlcwREVhaVdHTUlZMm0rV25manM9Wh8iHfdGb3lFVU1BMForOVRFVnFvV0dDUGhSejFDc0E9ZQSZG5DCPgJgBRKtAQhEEqgBChxlMFNIMmhCS0cxR0NseWxVWGNvUzA3cnZncXc9EiQ0MTZjNDhiMi1jMmFlLTQ0OTctODIzMi0wOTE5ODIzMWYzMGMYACAAKAAw5u/Oy9IwOPXxzsvSMED18c7L0jBKHEozVW8rWmF3cFJobnJXaGJ2QzBxQmtoakV2QT1aHyId/U1QdjZJdUgvRHlxcFNQeXBWYWsrcDVyaUdpbz1lhbeGs8I+AmAFEq0BCCsSqAEKHHNoNTA2cmMwL2t0NFRzTGlnTkowNEVsYU4yMD0SJGNlNjA3MjljLWQyM2YtNGFmMS05ZjY3LTRlODFjZGE0M2MzMRgAIAAoADDz3sSFzjM48PCkyZQzQPDwpMmUM0occXJpcXVwcFlydkk4YlBsUkVEZXpQWXJJRDYwPVofIh3vcmRoQzRiblVvU2djekY0RDFGdjNLdG1PMzBRPWXYPvtGwj4CYAUSrQEIDxKoAQocd1Voak9rSld6QURSclV5YWFxREJMeGFVeWxVPRIkYjRlOTBiYjEtMzBhZS00MGQ3LTgwZWYtZTdiYzc0ZjUzNTJmGAAgACgAMLLwiqerMzjiutDMpzJA4rrQzKcyShxyc1Q2OEVyV0tQZ2V3YXBhUDhoMG1FcXRFZ2c9Wh8iHf9oZE1jN3RHaXlUMWdCR3g1Z0VzZGtrdEtwVlE9ZYVn7Q/CPgJgBRKtAQgxEqgBChxjZytacHVHbGl2Z1BETFFIbnUySFAzYkhmQk09EiQ0MjQyZjIwNy1hM2E5LTQ2ZmMtYWQ5ZC01ODIyODNiOGEzOGMYACAAKAAw/frHhc4zOJvKz57YMkCbys+e2DJKHDB6dm00Y1luL3kxaHBLNm1YekNDZURteXU0VT1aHyId/3dlcC9lOVlNUE82aGh5VmwxemNaV0ZOZ3R1QT1lmEl0N8I+AmAFEq0BCC0SqAEKHExRSWdzWjdCNmVsY1hOd3VlcFI1N3N3Vk9SZz0SJDAwYmFhY2I0LTU5NjItNDQyNC1iZjc1LWUzNGVjZGVmMDUwMBgAIAAoADCK1MWFzjM4yI2M4c0zQMiNjOHNM0ocUHdnYVlzYVd5ODZmZDFDM1FzY1VuaEZFcWFNPVofIh37ci9URXI3WG4yK1pWLzZRYTVWWGY1MXFiam44PWVk8rSdwj4CYAUSrQEIKhKoAQocQXdnMnNUY1NZc2Z1YUtXbnE4TXNpelRlWTN3PRIkNjczZDFjMjItOWM3Ny00MjEzLTgzOTktNjY0MmVlNGUwZTViGAAgACgAMNDKxIXOMzjCl/GmiDNAwpfxpogzShxXK2VMNUxxbDQ5V2laa2ovR3hYMzF2WDI3TlE9Wh8iHd5iSVZid0FHRkdHLzZGQ0tiMGtieTlKNElDVEE9ZcENB0PCPgJgBRKsAQgoEqcBChxqZFE3R05JS01rZVM4T1NuSzZEaHdHRjBIeTQ9EiQ4NTJkM2Q5Yi1iN2RkLTRiYWQtOTczZC1lOGQ3ZDZhZGU5ZWIYACAAKAAwiI/Ehc4zOIyDvczPMkCMg73MzzJKHGM2aFh1bEI2ZFdYSk1WYjFnMVYwN2VqK3F2ST1aHiIceXE4OUVSTG9oRU9uZGdFZm5HZS9KMDR1Nm1JPWXe2wGcwj4CYAUSrAEIJxKnAQocejZPSkVPaWxYTWZLUzJneElsdm5xZWxRZWwwPRIkN2RjMjA3ZTktMmU2MS00YTVkLWJhNTMtNTQ3ZDUyYTE5NDkyGAAgACgAMKvfw4XOMzjfxqTy2zJA38ak8tsyShxVazNBNUFyUlYzazhYQXRoRFp6ZUt1TzI0Znc9Wh4iHFQxajhla2JEOHlKZjJpaVE2aElCdmE0UE1CUT1ls9Yv4cI+AmAFEq0BCCYSqAEKHFdCUFNQUE4rQ2JoQWdaZFNmTTZxUStDZ3ZZST0SJDM5ZGZiZTJjLTBkMmYtNDYxNi1iMjQxLWM5OWEyNTAyNGY3YhgAIAAoADDK4/DL1DM4vIHDhc4zQLyBw4XOM0ocZU9OUW1qMjI0S29YblgrbEQ1eXI5d0U0VXZRPVofIh3+QWE2WTN6TlJ6VGh5bHlTWjRtcWdmUzgyUVFRPWUAAAAAwj4CYAASrQEIIxKoAQocT3M3RXZ6cE5pc1k1U0ZTTHJCRFdwMURUcDAwPRIkMDE5M2E5ZWEtNDYwMC00NDczLTkwNDMtZjNhZjc0OGIxZGI3GAAgACgAMK7Xlc/mMzir4YzRpDNAq+GM0aQzShxZZnMwQ2NNckFpOVY1WU1Zckl2aFNscGFsWWM9Wh8iHaNCYlN6YkZONkJad0R3a2xZRzZrNFpTL0Y1a1k9ZaDJZInCPgJgBRKsAQgiEqcBChxKNmdWTjl4elVoWmxhN2RBbW9lQWlKajVCa2c9EiRjZDIwMjFjNC1mMTdiLTQ2MzMtYWFmOC1lY2VkYTVhYzFjNWQYACAAKAAwgOeguOYzOIua7fCdM0CLmu3wnTNKHGExa0pSbVBIaHpzditDWi9sSmU2Q1BtZzhnZz1aHiIcbDQrUTE0QTVHTW0xdkczWGF4N2QzTWNDMjZFPWWRv5bTwj4CYAUSrQEIKRKoAQocSldlUk9rZGR3Z3JVNHVSSmVWbk1KSE5QNzR3PRIkM2E2MjMwMmUtZTU1NC00YmNlLWE5NmQtY2NhZjY4MDczNTU4GAAgACgAMMGyxIXOMzi3vbmV8TJAt725lfEyShxkSWtGWUdxbmR1WitJbFBYTkFFWFZLUkh5VVE9Wh8iHbxnZnl1SWdRdlRFaHkzeGdDZC9Mdm51eHRNaGM9Zf6uuJvCPgJgBRKuAQgeEqkBChxBaGZJWnQxY3J5a0JuSDU0VXdTZTYxMmFZTnc9EiQzYjMxZGM0NC05ZjM2LTRlNTUtYjhmNS03YTQ5MmIyMTc3YzUYACAAKAAwsZyRnKUzOMD6kJylM0DA+pCcpTNKHGtWL1YwL1ZGQlo1QlRwZ01pU0p4b2pXVDhNUT1aICIe/7c4dm9qMFRiTWNlSHpoMCthVEN6M2Yxck8wL3c9ZYVn7Q/CPgJgBRKOAQgCEokBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiQxNjZlZDI0Yi04OTVmLTU5NmItOWM3OS00OTNhYjg0Y2ExMTMYACAAKAAw55HmguIvOJ/draHsL0Cf3a2h7C9KHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAwj4CYAASrQEIPBKoAQocWlE2a1pLMVVCOFc1U3VyTFhzOVFwdmoxZDVJPRIkMjEzY2ZmOTctOWI5ZS00ZmEyLTk2ZWYtNDY1NDk3ZjlkNzc1GAAgACgAMOXJq7zmMzj4sb2loTJA+LG9paEyShxoTTYxU1hCWDIrazk5bWNkWjR3YVQ5S0NPQVE9Wh8iHf1pOXJ2Q1hZRDR1YVRQTGVGR1V1Q0d4K1loQ1U9ZQAAAADCPgJgBRKtAQgUEqgBChxTZURGRjd2Z2ZQVUhwS3JtcCswallFUDcvNzQ9EiRlZGM5YmYwNy1jZjBiLTQyODQtOGI3ZS1lYzgyYjBlNzExMmIYACAAKAAwsI3YkZQzOI+55bC2MUCPueWwtjFKHHJycktlYWxQa2RYdlBmU3BVWWJhQWRscSthVT1aHyIdEkNMOFJDcVhVMUowMEJkazUrS2Qwbnp3a25IRT1lhWftD8I+AmAFEqwBCCESpwEKHHBXTGxldjZncDZzSmRZTUlrU0VxeURvTlRCRT0SJGI2Yjc1ZGI0LWIxNWMtNGFmZi05YjQyLTI3ZDc0Y2ViY2VlMRgAIAAoADCpvufY6TM46t2qi8sxQOrdqovLMUocNkE4YmNDYm1RemJzTDVKaHJBUXYrZ3I5TzN3PVoeIhxZNGkyZDFxRlpmZEo2Zmc2NTlZTDlVU0dGRFE9ZZn00DvCPgJgBRKtAQgYEqgBChw3SjVGWGR4QnlDS0ZLUWlOWk1PMXVRUzBRMEk9EiQ4Y2Y2ZmQ5YS03YTkzLTQxNmMtOWJjNi1iZWJiYWUxM2Y2YmQYACAAKAAw2LGY35UzONyyvaWhMkDcsr2loTJKHHN6YjRuSWJiUmJHSTY4ZVJhRUJBZUVBcGNsYz1aHyIdtmRHaHVXcGx1aGZQTnN4ZWhnMVUxbCtONlFkND1lhWftD8I+AmAFEq0BCEISqAEKHHhWUkEyOCtmV1h4OHNITk5sVDYvR0dQQkltOD0SJDM3YmYxNjcwLTM2YzEtNGRiYy1hZTc5LTQ0MzFhNjRiMzdmNRgAIAAoADDl787L0jA41vHOy9IwQNbxzsvSMEocMWxVL2FyTldFd1gweVNEbDRtSWUyeXJIK2wwPVofIh31Z1ZYdXhNRTNLcThJcWZFdUJRN3VmSTRxL2RrPWWPydC5wj4CYAUSrQEIIBKoAQocU0gyanZHSEtSQnFYS2lNd014UVdiZ3hWQlN3PRIkYzI1M2Y4ZTktZDg2ZS00YjdkLThiNGQtNTQ4ODgxNzM2ZDAwGAAgACgAMIGlhazuMTjG6f+r7jFAxun/q+4xShx4ZTJGMTZ1TFhzYmg0QkdBbVRqb05HcDJUSTg9Wh8iHblESGpxME1KMmFoN3lKdnE0RXRBZWVPb1lrQTA9ZQAAAADCPgJgABKtAQgdEqgBChxkdXM0eVJIeWZZNUo1QlNGS29yOUt2R21ZeEU9EiQ3ZjhlMDI4MS1hYmQ3LTQzNDktOTE1My1kYjFmMjhmMTcyODIYACAAKAAwt4vt8J0zOOyZ7fCdM0Dsme3wnTNKHE9XclZtSDRUNy9hMEgrL1NTTzlqZUpvb1pzZz1aHyId/29Ed3NMRjlPQ2VKd2hhSHdBc2pGMVcwbC9JRT1lE2JsrcI+AmAFEq0BCCQSqAEKHFVMRGc1aG1aRWZ5RHNmam5VdkpoVFVCMmFDND0SJDZmZjA2ZjhmLWQ5ZjMtNDAwMC1iOGU0LWMwNjYzOTAyNGZkZRgAIAAoADCits6E2zM4zuS5mqUzQM7kuZqlM0ocamQ0aXZoUVlMcWx1QmJQLzJoVU5rM01MZklBPVofIh3bOWJCWktFS1FSTzkvclZoNnZqV0RNSDhtUWx3PWV6ErDOwj4CYAUSrQEIFRKoAQocUW9mL3RRdGdnWVVaaW43cmFldzFjdXZ0YXlzPRIkOTkwZmUzMGQtODhiYy00MDEwLTk5ODEtOThiYzI0N2U5OGZjGAAgACgAMLyL7fCdMzjtsLGR4zFA7bCxkeMxShxkNnk3eVVGT2QvRTB0aDR1ejhLYXNwZjBwWW89Wh8iHSVlNW5OaEhzZDFIVW1VUGRya3JQN1V1RGVUU289ZYVn7Q/CPgJgBRKtAQgZEqgBChx1Y1JBQ0w1bk5saTMrMUoxSUpkSm5NNWFiWnM9EiQ4MDhjOTkyYi1kZjk3LTQ2OGItYjA0NS1iZDJkN2UxYWIyZTkYACAAKAAwso3YkZQzOPbakrvRMkD22pK70TJKHDRTSGxlSHJBQ1ZLTm9wS2JOQ0tXdmU0Y1N5WT1aHyId22pCR3ptUjI1dG5NV2pOejQvR2NQUG45Sk5HQT1lhWftD8I+AmAFEq0BCDYSqAEKHEVybWJ1WHFteFJLZmYwc0FiZlZuZzJDek9LMD0SJDRiYzRmZDZjLTM5OTItNDM4MS05MWEwLTZjNjYxMGVjYzJkZRgAIAAoADCS8MWz6DM4/4rXu84zQP+K17vOM0occHBrZGE5VUxIRUF4NHF1dHRTNWJVcTVpVTNNPVofIh3/UXdTR2YxZlY1eHBCYzkvNGNlS1ZyN0RDT3AwPWUAAAAAwj4CYAASrQEINRKoAQocaUZBcm1GSGl1R0ZHM0d5aG9rUU5LL2gySU9NPRIkNjVhOGRhNmItNTk4NS00NzI1LTg1ZjUtMTAzNDRlZGZlMzllGAAgACgAMOL5w7joMzjDocqX4DNAw6HKl+AzShxtY1h0b0lJS2NkZVk3Z1dKdlNTUGlTVDUybzQ9Wh8iHf9QTTRGR2tvckxKczlQd3dVbXE4MGNRc0ZCYU09ZYcQbErCPgJgBRKsAQgXEqcBChxVZnFUL2twUlIzQVN3RHFteUZCWTQ4czRtL2c9EiQxMDkwNmQ2MS1hNzQwLTRkZWUtYTM5MC1hY2VmZmUzMDBkNTcYACAAKAAwn6e9paEyOKW0vaWhMkCltL2loTJKHHM3U0RxQm1GOEpVdi9uejFkSTRiK1lBbGhnRT1aHiIcbGJVNlkranVnTjl4RmlVMksvb09ORHEwdVZNPWUsgQtiwj4CYAUSrQEIGhKoAQocdjY1NXdTTVAwSnUyNjQyelJjYUVMd1Q3dFMwPRIkZjA5MTBhOTgtYTkzNy00MWZhLWE0ODYtZTg1M2Y0ZmU1YmViGAAgACgAMPTb99KhMzir5tuI4TJAq+bbiOEyShx3MzlzWWhBVXNqSkoxOWF3bTVPT3h1Vi9HN2s9Wh8iHfthMXJVNWpEYXFtM2szSVUvK2xxaHBvL2FIK2s9ZRNibK3CPgJgBRKsAQg6EqcBChx2RnpjdTNTYUpwWGJrTERoSEI3WERDNkdldUU9EiRjNGU5ZTg1OS00NmYzLTRjZTQtYTFmMS1lNTYzOWYxNmExMTUYACAAKAAwsfqa/+UzOK6n+vzTMUCup/r80zFKHFROaDB3c0JUNkhnTTlqWnl6V1ByT0xJQnpmaz1aHiIcVnNJblhkTk5IdVdUVWtUbDVpN3RhUnk2S3BJPWV/tzZswj4CYAUSrAEIEhKnAQocRFpWbjFad1puaTIzeEtYSERCWEVIZmVKa09zPRIkYWVjNjFlMTctNTY3MC00ZmY3LWJjZjItMWYyMzdlODA2NDA0GAAgACgAMIOlhazuMTiGrPyr7jFAhqz8q+4xShx5WGU0Vno3MlhLYXUxK2w0Vy9FbFB3RnA3TzQ9Wh4iHHkwRGQ3RUhQampRSmpPdmxMWHZacUFEL0dZMD1lAAAAAMI+AmAAEo4BCAUSiQEKHHdSQnJaTCs2UEE5YXZLZ2pOUDdKWERMY2Z2cz0SJDRhODYzN2MxLTI0ZDUtNWQ5Mi1hYmNhLTJiZGRiZDMyOWM4MRgAIAAoADDG3artkjM46t6q7ZIzQOrequ2SM0ocbm14NjVzUUR2eEk4VGdFZXYrQStudHRvU240PVoAZQAAAADCPgJgABKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQ1MWY1YmJiYy1mZDIzLTVmYjMtYmU3Ni1mMTI2Zjc2ZDMxYmQYACAAKAAw55HmguIvOK/draHsL0Cv3a2h7C9KHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAASrQEIMBKoAQocdzV3YjlhakhzbURqSmtkd1lsK29LaXpUYitVPRIkM2RiMDc0OWQtMTdmYy00Yjk0LThjNTEtZDgwNDczMzA0M2QwGAAgACgAMLzUxoXOMzjS2uuj8zFA0trro/MxShx1VVduVWVCTVdlY0F0Wi9lZExiMXhmU25xZFE9Wh8iHf8xRmxVSUhUaHdONzdITjZvR1daSVoyTGJkaVk9ZQAAAADCPgJgBRKuAQgREqkBChw3SzZxNDNJOEpORWFmSUV5RWpmMDFFVDZrVzg9EiQ5ZGFjZDUwOC0zYzAzLTRjNzEtYmMxMC1jNjgwNTFmY2Y0NDgYACAAKAAw3fn419gzOOqmvJCUM0DqpryQlDNKHHBOUVVaUDY0RVRUd0kyV0xaN1FZOVpSOEV3MD1aICIe/9o5VU9VWGRyeXlwMUdrMEpNUHhxQnJkMmNFU2c9ZdMjXtrCPgJgBRKtAQgbEqgBChxuUUJMS3JqclZWRWlBZXU1c1EwTGk1V0ZMMTQ9EiRlZjg0ODU1OC1hY2ZjLTQ5ZWUtYWRmZC0zYjE5ZDc0MGE3MGUYACAAKAAwyZeA3/syOOP38o7mMkDj9/KO5jJKHGppdlVraThZNFVHYmQwNHhuc0ZWLzhGdEdFWT1aHyId/nJDTW5kUlhRYmpDRUVtTUNhYVU3ZTVZUEpNND1lMc1kW8I+AmAFEq4BCD4SqQEKHHY2Y05PVlpmYUFmYUFtWk5rcWZjaW93RElhWT0SJDA1N2JlNGFkLTY0YjctNDA2Yi1hNWEzLTQ1ODVkNzA5MWZhNRgAIAAoADCz/dq73zM4g7S9paEyQIO0vaWhMkoca3pxRC9WM0JtTnlKL3F3VmQ2eDhNTUxJZm8wPVogIh7/929FUFpZaElTUkxLbVIzZlJROHhoazRsQWlmdz1lFx5jrcI+AmAFEq0BCBwSqAEKHFVtMnh1VVRGeDRHR0lQOVVKYU10OHB2K0QrZz0SJDI0MTMyMGVhLWE0NzEtNDBmMC05M2MzLWYzMTRiYzhmZjQ2ZhgAIAAoADCIx738hzM45cu9/IczQOXLvfyHM0ocQmhXRDRrcktsdTI2NWZCWnovbXo4ZUZaMk1zPVofIh3/QVFSeVR3NHRSYlVLMkFhdGxYTXBZYVVHRGhvPWWFI0oBwj4CYAUSrgEIEBKpAQoceko3cEVXSDFtcWJvY1NZNTdFOTJRYVJUL0k0PRIkYmNmY2NhMDYtZTBiZi00ODg4LTg1YWYtZGVlYjRhN2Y1Njk4GAAgACgAMJ69vZCUMzj5o7bpqTJA+aO26akyShxpYncxMmNrWmlkMHRVQm5xNmlGd3VEcUVqY1U9WiAiHv+0R2RONERpNGlmWDdrOE1zUDNteTJPZ0VHbnBFPWVqZO4Swj4CYAUSrAEIDBKnAQocTDVHZnlJK1dHL2tNMVg2SnZGNjFPOFlQaVI4PRIkNjY5NzYxYWYtMzE4OS00MjA3LTk2MDYtOThhZDQ3Y2VhNGMxGAAgACgAMISlhazuMTip1/ur7jFAqdf7q+4xShxOUUN4d2J0YjM3OHJta2l4MGJCc092Q2hLNVU9Wh4iHDhUdmlSL0MwQ1pWZmM0NTd3Qm5Za1pmSjhNYz1lAAAAAMI+AmAAEq0BCA0SqAEKHFRsT1ljbTVYWUdQZGJjWUhSWEQzaHZSUU5hUT0SJDNiMDQ2YzFmLTRkNGYtNDhjNS1iODBjLTk1ZjA5Y2YxNDhlYxgAIAAoADDIuPGmqzM4ibf/2vkxQIm3/9r5MUocejlQMzI5N0YzN0YxMndpT1lBVm1ianU0dXBNPVofIh3WOUFtUlU1U2V3d2pNRzg1dnA1b09OTnkvVU13PWUmMZoywj4CYAUSjgEIARKJAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkMDBjNmUzY2MtOGI2Ny01ZjEwLTlmOTctZmM5ODM3NDc3NDBhGAAgACgAMOeR5oLiLziA3a2h7C9AgN2toewvShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAAMI+AmAAEqwBCBYSpwEKHHVJc2hCOXJ5ZjIza1RZNC9BcnFoTU5XQ1dBTT0SJDVjYzY2NzVjLWQ5NDctNGZjYS1iMzI5LWFkNWU2ZDY2N2NjNRgAIAAoADC1jdiRlDM42amGrdwxQNmphq3cMUocUG5WSk5hc0dta1ZScmJLNENjWGNJdGorTGhvPVoeIhxLVXh3bkxiVG9JS2kxWXNJTWV3eUE4amlnMVE9ZYVn7Q/CPgJgBRKtAQg9EqgBChxVUkpSVWtLNENHNzdGa1F5RHhiVWFPQlR6bUU9EiQzZmU2Yjc1Yi00ODlkLTRhNjctODM3OC0wMjdkOWE1ODIyNTcYACAAKAAwtanN5MozOIOzvaWhMkCDs72loTJKHEFGRE0zeG9yTVZreXQ0YnozQXQrZ2kvc09SUT1aHyId/zdZcERqZzkydHZSajc1QzkyS0d4aWMyMENVQT1lo+RVHcI+AmAFEq0BCBMSqAEKHHNqbDFRUnRvdC9PWThjMXI3ZTh2WmZsYWNxcz0SJGNhNWMwMGRiLTI0MTItNDVjYi1iNDFiLTNjZDNmZjZjNjlhMBgAIAAoADCM5fKGoDM4mL6Lv6MxQJi+i7+jMUocTTVBOXhURXZHTFJUR21QWEJjVDVHOUNHNno0PVofIh0JSU4vMXY3UEZmQkVMb0VCSko3eFlsTkY4OVhRPWWFZ+0Pwj4CYAUwADgA",
+   "version": 1
+}
